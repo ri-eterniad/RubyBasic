@@ -18,3 +18,11 @@ Stringclass
 FloatClass
 Instance
 Method
+
+・数値オブジェクトと主要なメソッド
+.class-クラスを調べる
+.methods-メソッドを調べる
+分数はRational(,)
+round-四捨五入
+floor-切り捨て
+ceil-切り上げ

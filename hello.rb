@@ -1,21 +1,23 @@
-fruits = "りんご"
+p 1+1
+p 1-1
+p 3*3
+p 5/2.5
+p 6%2
 
-puts fruits
+p 6.3.class
+p 6.3.methods
 
-fruits = "ブドウ"
+p Rational(2,5) +Rational(2,5)
+p 2/5r + 2/5r
 
-puts fruits
+p 56.6.round
+p 56.6.floor
+p 56.6.ceil
 
-APPLE = "りんご"
-
-puts APPLE
-
-APPLE = "ブドウ"
-
-puts APPLE
 =begin
-変数-書き換え可能
-これはどの言語でも同じような感じ
-定数-大文字で始める
-Rubyは警告を出してくれるが、書き換えが可能になっている
+分数はRational
+round-四捨五入
+floor-切り捨て
+ceil-切り上げ
+
 =end
