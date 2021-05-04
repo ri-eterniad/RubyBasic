@@ -1,7 +1,11 @@
-#Rubyの基礎学習の記録です
+print "hello"
 
-・print puts p について
+puts "hello"
+
+p "hello"
+
+=begin
 print 通常表示
 puts 表示後改行
 p ""も表示　デバックなどに使われる
-
+=end
