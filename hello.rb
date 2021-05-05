@@ -1,24 +1,13 @@
-#cloud9からローカルに移してpushできるかの確認
-p 1+1
-p 1-1
-p 3*3
-p 5/2.5
-p 6%2
+puts "he\nllo w\torld"
+puts 'he\nllo wor\tld'
 
-p 6.3.class
-p 6.3.methods
-
-p Rational(2,5) +Rational(2,5)
-p 2/5r + 2/5r
-
-p 56.6.round
-p 56.6.floor
-p 56.6.ceil
-
+puts "値段は#{100*4}"
+puts '値段は#{100*4}'
+name ="maruhodo"
+puts "名前は#{name}"
+puts "hello" + "world"
+puts "おはようの練習\n" + "おはよう\n" * 10
 =begin
-分数はRational
-round-四捨五入
-floor-切り捨て
-ceil-切り上げ
-
+""特殊文字使える
+''特殊文字反映されない
 =end
