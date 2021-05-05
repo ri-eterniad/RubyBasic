@@ -1,13 +1,21 @@
-puts "he\nllo w\torld"
-puts 'he\nllo wor\tld'
+name = "maruhodo"
 
-puts "値段は#{100*4}"
-puts '値段は#{100*4}'
-name ="maruhodo"
-puts "名前は#{name}"
-puts "hello" + "world"
-puts "おはようの練習\n" + "おはよう\n" * 10
+puts name.upcase
+puts name
+puts name.upcase!
+puts name
+
+puts name.empty?
+puts name.include?("M")
+#大文字、小文字注意
 =begin
-""特殊文字使える
-''特殊文字反映されない
+!破壊的なメソッド
+
+?真偽値
+
+MARUHODO
+maruhodo
+MARUHODO
+MARUHODO
+
 =end

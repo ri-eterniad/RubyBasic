@@ -31,3 +31,12 @@ ceil-切り上げ
 ""特殊文字使える
 ''特殊文字反映されない
 #{}使用方法
+
+・! ?
+!破壊的なメソッド
+?真偽値
+
+ex)
+puts name.upcase!
+puts name.empty?
+puts name.include?("M")
