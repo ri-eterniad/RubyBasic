@@ -53,3 +53,25 @@ puts colors[0]
 .push("")
 << ""
 に書き換えることができる
+
+・ハッシュについて
+書き方、書き換え例)
+socores = {"nagumo" => 200 ,"tokio" =>300}
+socores = {:nagumo => 200 ,:tokio =>300}
+scores = {nagumo: 200 ,tokio: 300}
+
+配列でよく使うメソッド)
+.size
+.keys
+.values
+.has_key?(:nagumo)
+.has_key?
+
+オブジェクトの変換、配列化、ハッシュ化
+.to_i
+.to_f
+.to_s
+
+.to_a
+.to_h
+

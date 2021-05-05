@@ -1,28 +1,28 @@
-colors =["red","blue","yellow"]
-puts colors[0]#red
-puts colors[1..2]
-puts colors[0..2]
-puts colors[-1]
+# socores = {"nagumo" => 200 ,"tokio" =>300}
+# socores = {:nagumo => 200 ,:tokio =>300}
+scores = {nagumo: 200 ,tokio: 300}
 
-colors[0] = "pink";
-colors[1..2] =["green","gray"]
-puts colors[0..2]
+p scores[:nagumo]
 
-colors.push("gold")
-colors << "silver"
+p scores.size
+p scores.keys
+p scores.values
+p scores.has_key?(:nagumo)
+p scores.has_key?(:taguchi)
 
-p colors.size
-p colors.sort
+p scores.to_a.to_h
 
-#大文字、小文字注意
+x =50
+y ="3"
+
+p x + y.to_i
+p x + y.to_f
+p x.to_s + y
+
 =begin
-!破壊的なメソッド
+keys
 
-?真偽値
+has_key?
 
-MARUHODO
-maruhodo
-MARUHODO
-MARUHODO
-
+sや?に注意
 =end
