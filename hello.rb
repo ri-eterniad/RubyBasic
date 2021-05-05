@@ -1,12 +1,19 @@
-name = "maruhodo"
+colors =["red","blue","yellow"]
+puts colors[0]#red
+puts colors[1..2]
+puts colors[0..2]
+puts colors[-1]
 
-puts name.upcase
-puts name
-puts name.upcase!
-puts name
+colors[0] = "pink";
+colors[1..2] =["green","gray"]
+puts colors[0..2]
 
-puts name.empty?
-puts name.include?("M")
+colors.push("gold")
+colors << "silver"
+
+p colors.size
+p colors.sort
+
 #大文字、小文字注意
 =begin
 !破壊的なメソッド

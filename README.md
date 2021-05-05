@@ -40,3 +40,16 @@ ex)
 puts name.upcase!
 puts name.empty?
 puts name.include?("M")
+
+・配列
+ex)
+colors =["red","blue","yellow"]
+puts colors[0]
+
+範囲の指定もできる
+-の値も指定できる
+配列の中に配列を入れることもできる
+
+.push("")
+<< ""
+に書き換えることができる
