@@ -1,26 +1,34 @@
-def hello(name)
-    puts "hello!#{name}"
+class User
+
+    attr_accessor :name
+    #中身はsetter:name=(value)とgetter:name
+    #ゲッターだけはattr_reader
+
+    def initialize(name)
+        @name = name
+    end
+
+    def hello
+        puts "Hi!#{@name}"
+        puts "Hi!#{self.name}"
+        puts "Hi!#{name}"#self.nameの省略形
+    end
 end
 
-hello("kiryu")
-hello "kiryu"
-#デフォルト値の設定もできる
-def greet(name = "桐生")
-    puts "おはよう#{name}"
-end
-greet()
-greet
+majima = User.new("majima")
 
-def goodbye(name = "桐生")
-    friend ="majima"
-    return "グッバイ#{name}"
-end
+majima.hello
 
-p goodbye()
-# p friend スコープ関数ないの変数は外からアクセスできない
+kiryu = User.new("kiryu")
+
+kiryu.hello
+
+p kiryu.name = "fake_kiryu"
+
 =begin
 実行
 
-
+クラス名前は必ず大文字から
+インスタンス変数は、インスタンスの中からであればどこでも使用できる
 
 =end
