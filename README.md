@@ -86,3 +86,11 @@ scores = {nagumo: 200 ,tokio: 300}
 %f
 printf()文字列を表示
 sprintf()文字列を返してくれる
+
+・条件分岐
+if elsif end
+elsifはeがないことに注意
+
+gets--ユーザ入力
+
+単純な条件分岐はifを後置するとよい
