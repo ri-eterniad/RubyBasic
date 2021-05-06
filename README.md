@@ -105,3 +105,17 @@ end
 
 gets.chomp
 getsは改行が入っているので取り除く
+
+・繰り返し
+while 
+
+while 条件 do
+処理
+end
+
+times
+例)
+5.times do |i|
+    puts "#{i}:kiryu"
+end
+3.times{ |i| puts "#{i}:mine"}
