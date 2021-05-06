@@ -1,44 +1,29 @@
-i =0
+for i in 15..20 do
+    p i
+end
+#doは省略可能
 
-while i < 10 do
-    puts "#{i}:hello"
-    i = i +1
-    puts i
-    i += 1 #上と同じ
-    puts i
+for color in ["red","blue","green"] do
+    puts color
 end
 
-puts "\n"
-
-5.times do |i|
-    puts "#{i}:kiryu"
+for name,score in {kiryu:400,majima:350} do
+    puts "#{name}:#{score}"
 end
-3.times{ |i| puts "#{i}:mine"}
+
+#forは内部的にはeachを使っている
+["red","blue","green"].each do | color |
+    puts color
+end
+
+{kiryu:400,majima:350}.each do |name ,score|
+    puts "#{name}:#{score}"
+end
+
 =begin
-実行結果
-0:hello
-1
-2
-2:hello
-3
-4
-4:hello
-5
-6
-6:hello
-7
-8
-8:hello
-9
-10
+実行
 
-0:kiryu
-1:kiryu
-2:kiryu
-3:kiryu
-4:kiryu
-0:mine
-1:mine
-2:mine
+forは内部的にはeachを使っている
+eachは集合的なオブジェクトのメソッドとして機能する
 
 =end
