@@ -15,7 +15,7 @@ class User
     end
 end
 
-class Fruits
+class Foods
 
     attr_accessor:name
 
@@ -40,29 +40,23 @@ class Fruits
 
 end
 
-majima = User.new("majima")
+class Fruits < Foods
 
-majima.hello
+    def deli
+        puts "#{@name}美味しいな"
+    end
 
-kiryu = User.new("kiryu")
+    #オーバライド 元のFoodsクラスのdescriptionを
+    def description
+        puts "これは美味しい#{@name}です"
+    end
 
-kiryu.hello
+end
 
-p kiryu.name = "fake_kiryu"
-
-banana = Fruits.new("banana")
 grape = Fruits.new("grape")
-apple = Fruits.new("apple")
-
-banana.description
-
-Fruits.info
-p Fruits::VER
-
+grape.deli
+grape.description
 =begin
 実行
-
-クラス名前は必ず大文字から
-インスタンス変数は、インスタンスの中からであればどこでも使用できる
 
 =end

@@ -285,3 +285,52 @@ end
 Fruits.info
 p Fruits::VER
 ```
+
+
+## クラスの継承
+書き方やオーバライドの例
+
+
+```
+class Foods
+
+    attr_accessor:name
+
+    @@count =0
+
+    VER =1.1
+
+    def initialize(name)
+        @@count += 1
+        @name =name
+    end
+
+    def description
+        puts "これは#{self.name}"
+    end
+
+    def self.info
+        puts "VER#{VER}これはクラスメソッド　現在#{@@count}個のインスタンスが作られました"
+    end
+
+    
+
+end
+
+class Fruits < Foods
+
+    def deli
+        puts "#{@name}美味しいな"
+    end
+
+    #オーバライド 元のFoodsクラスのdescriptionを
+    def description
+        puts "これは美味しい#{@name}です"
+    end
+
+end
+
+grape = Fruits.new("grape")
+grape.deli
+grape.description
+```
