@@ -1,28 +1,33 @@
-# socores = {"nagumo" => 200 ,"tokio" =>300}
-# socores = {:nagumo => 200 ,:tokio =>300}
-scores = {nagumo: 200 ,tokio: 300}
+puts "hello"
+puts %Q(hello)
+puts %(hello)
 
-p scores[:nagumo]
+puts 'hello'
+puts %(hello)
 
-p scores.size
-p scores.keys
-p scores.values
-p scores.has_key?(:nagumo)
-p scores.has_key?(:taguchi)
+puts "he\"llo"
+puts %Q(he"llo)
+puts %(he"llo)
 
-p scores.to_a.to_h
+puts 'he\'llo'
+puts %q(he'llo)
 
-x =50
-y ="3"
-
-p x + y.to_i
-p x + y.to_f
-p x.to_s + y
+puts %W(base"ball,socc"er)
+puts %w(base'ball,socc'er)
 
 =begin
-keys
+実行結果
+hello
+hello
+hello
+hello
+hello
+he"llo
+he"llo
+he"llo
+he'llo
+he'llo
+base"ball,socc"er
+base'ball,socc'er
 
-has_key?
-
-sや?に注意
 =end
