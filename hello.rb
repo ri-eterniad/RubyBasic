@@ -1,29 +1,25 @@
-for i in 15..20 do
+# i = 0
+# loop do
+#     p i
+#     i +=1
+
+# end
+
+10.times do |i|
+    if i == 7 then
+        # break
+        next
+    end
     p i
-end
-#doは省略可能
-
-for color in ["red","blue","green"] do
-    puts color
-end
-
-for name,score in {kiryu:400,majima:350} do
-    puts "#{name}:#{score}"
-end
-
-#forは内部的にはeachを使っている
-["red","blue","green"].each do | color |
-    puts color
-end
-
-{kiryu:400,majima:350}.each do |name ,score|
-    puts "#{name}:#{score}"
 end
 
 =begin
 実行
 
-forは内部的にはeachを使っている
-eachは集合的なオブジェクトのメソッドとして機能する
+無限ループ
+Cntl+cで解除
+
+break
+next-他の言語のcontinueみたいなもの？
 
 =end

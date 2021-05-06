@@ -133,3 +133,12 @@ end
 {kiryu:400,majima:350}.each do |name ,score|
     puts "#{name}:#{score}"
 end
+
+## ループ処理
+
+loop
+.times
+
+
+break
+next-他の言語のcontinueみたいなもの？
