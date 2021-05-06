@@ -142,3 +142,28 @@ loop
 
 break
 next-他の言語のcontinueみたいなもの？
+
+## 関数
+・書き方
+ex)
+
+def hello(name)
+    puts "hello!#{name}"
+end
+
+hello("kiryu")
+hello "kiryu"
+
+
+・デフォルト値の設定もできる
+
+ex)
+
+
+def greet(name = "桐生")
+    puts "おはよう#{name}"
+end
+greet()
+greet
+
+・スコープ関数ないの変数は外からアクセスできない
