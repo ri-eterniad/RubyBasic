@@ -158,12 +158,15 @@ hello "kiryu"
 ・デフォルト値の設定もできる
 
 ex)
-
-
+```
 def greet(name = "桐生")
     puts "おはよう#{name}"
 end
 greet()
 greet
+```
 
 ・スコープ関数ないの変数は外からアクセスできない
+
+
+##関数について
