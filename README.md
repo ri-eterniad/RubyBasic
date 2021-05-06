@@ -94,3 +94,14 @@ elsifはeがないことに注意
 gets--ユーザ入力
 
 単純な条件分岐はifを後置するとよい
+
+case
+    処理
+when
+    処理
+else
+    処理
+end
+
+gets.chomp
+getsは改行が入っているので取り除く
