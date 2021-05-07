@@ -334,3 +334,24 @@ grape = Fruits.new("grape")
 grape.deli
 grape.description
 ```
+
+## メソッドのアクセス権
+private
+protected
+public
+
+privateについて
+イニシャライズメソッドとクラスの外に書いたメソッドは
+自動的にprivateになる
+-レシーバーを指定できない
+そのためselfは記載しない
+ユーザのインスタンスからは呼び出せない
+
+
+書き方例
+```
+private
+        def foodPrivate
+            puts "ptivateメソッドです"
+        end
+```

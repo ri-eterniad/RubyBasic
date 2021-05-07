@@ -1,19 +1,3 @@
-class User
-
-    attr_accessor :name
-    #中身はsetter:name=(value)とgetter:name
-    #ゲッターだけはattr_reader
-
-    def initialize(name)
-        @name = name
-    end
-
-    def hello
-        puts "Hi!#{@name}"
-        puts "Hi!#{self.name}"
-        puts "Hi!#{name}"#self.nameの省略形
-    end
-end
 
 class Foods
 
@@ -30,7 +14,14 @@ class Foods
 
     def description
         puts "これは#{self.name}"
+        foodPrivate
     end
+
+    private
+        def foodPrivate
+            puts "ptivateメソッドです"
+        end
+    
 
     def self.info
         puts "VER#{VER}これはクラスメソッド　現在#{@@count}個のインスタンスが作られました"
@@ -49,14 +40,24 @@ class Fruits < Foods
     #オーバライド 元のFoodsクラスのdescriptionを
     def description
         puts "これは美味しい#{@name}です"
+        foodPrivate
     end
 
+    def foodPrivate
+        puts "privateメソッドを上書き"
+    end
 end
+
+Foods.new("food").description
 
 grape = Fruits.new("grape")
 grape.deli
 grape.description
 =begin
 実行
+
+イニシャライズメソッドとクラスの外に書いたメソッドは
+自動的にprivateになる
+-レシーバーを指定できない
 
 =end
