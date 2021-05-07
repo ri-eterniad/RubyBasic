@@ -382,3 +382,55 @@ end
 
 Player.new.info
 ```
+
+## 例外処理
+予期しない結果が発生した時に、適切に処理をしていく方法
+Rubyが用意している例外<br>
+自分で例外処理クラスを作ることも可能
+ 例<br>
+```
+x =gets.to_i
+
+#自分で例外処理クラスを作ることも可能今回は標準的なものを継承
+class MyError < StandardError; end
+
+
+begin
+    if x ==3
+        raise MyError
+        #raiseは強制的に発生させるメソッド今回使用
+    end
+    p 100/x
+rescue => ex
+    p ex.message
+    p ex.class
+    puts "ストップしました"
+ensure
+    puts "---END---"
+end
+```
+実行結果
+3の場合
+```
+"MyError"
+MyError
+ストップしました
+---END---
+```
+下記を加えると
+```
+rescue MyError
+    puts "マイエラーです"
+```
+
+```
+マイエラーです
+---END---
+```
+
+0の場合
+```
+"divided by 0"
+ZeroDivisionError
+ストップしました
+```
