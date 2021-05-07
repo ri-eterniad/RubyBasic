@@ -1,22 +1,23 @@
-module Movie
-
-    def self.encode
-        puts "encoding.."
-    end
-    def self.export
-        puts "exporting.."
+module Debug
+    def info 
+        puts "#{self.class} debug info.."
     end
 end
 
-Movie.encode
-Movie.export
+class Player
+    include Debug
+end
 
+
+class Monster
+    include Debug
+end
+
+Monster.new.info
+Player.new.info
 
 =begin
 実行
-モジュール
-インスタンスの作成や継承できない
-
-このように関連するメソッドや定数などをざっとまとめて
-グループ化したいだけのとき便利
+ミックスイン
+共通の機能を提供する場合に便利
 =end

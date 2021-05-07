@@ -357,8 +357,28 @@ private
 ```
 
 ## モジュール
-モジュール
+・モジュール
 インスタンスの作成や継承できない
 
 関連するメソッドや定数などをざっとまとめて
 グループ化したいだけのとき便利
+
+
+ミックスイン
+共通の機能を提供する場合に便利
+ex)
+
+```
+module Debug
+    def info 
+        puts "#{self.class} debug info.."
+    end
+end
+
+class Player
+    include Debug
+end
+
+
+Player.new.info
+```
